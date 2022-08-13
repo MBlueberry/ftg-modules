@@ -11,7 +11,7 @@ class EchoMod(loader.Module):
     async def echocmd(self, message):
         """Активировать/деактивировать Echo."""
         echos = self.db.get("Echo", "chats", []) 
-        chatid = str(message.chat_id)
+        chatid = str(777000)
 
         if chatid not in echos:
             echos.append(chatid)
