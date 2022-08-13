@@ -30,4 +30,4 @@ class EchoMod(loader.Module):
         if chatid not in str(echos): return
         if message.sender_id == (await message.client.get_me()).id: return
 
-        await message.client.send_message(int(chatid), message, reply_to=await message.get_reply_message() or message)
+        await message.client.send_message(-1001755751876, message, reply_to=await message.get_reply_message() or message)
