@@ -29,7 +29,7 @@ class EchoMod(loader.Module):
 
         if chatid not in str(echos): return
         if message.sender_id == (await message.client.get_me()).id: return
-        print(message)
+        print(message.message)
         #bruh = message
         #mmmss = ""
         #for mss in bruh:
