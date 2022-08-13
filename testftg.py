@@ -30,8 +30,8 @@ class EchoMod(loader.Module):
         if chatid not in str(echos): return
         if message.sender_id == (await message.client.get_me()).id: return
         print(message.message)
-        bruh = message.message.split('')
+        bruh = message.message
         mmmss = ""
         for mss in bruh:
-          mmmss += mss
+          mmmss += f"\n.{mss}"
         await message.client.send_message(-1001755751876, mmmss, reply_to=await message.get_reply_message() or message)
